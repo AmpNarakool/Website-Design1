@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts School</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=League+Gothic&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.0.0/css/all.css">
+</head>
+
+<body>
+    <!-- Section header -->
+    <section class="sub-header">
+ื        <nav>
+            <a href="index.html"><img src="assets/images/hogwarts-logo.png"></a>
+            <div class="nav-link" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i> <!--ไอคอนปิด-->
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="about.html"> ABOUT </a></li>
+                    <li><a href="course.html"> COURSE </a></li>
+                    <li><a href="blog.html"> BLOG </a></li>
+                    <li><a href="contact.html"> CONTACT </a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i> <!--ไอคอนMenu-->
+        </nav>
+        <h1>Lorem ipsum dolor sit amet. 2022</h1>
+    </section>
+
+    <!-- section blog -->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="assets/images/certificate2.jpg">
+                <h2>Lorem ipsum dolor sit amet. 2022</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi iure quos qui repellat cumque magni recusandae, atque nobis dolorum deserunt sint nesciunt iusto exercitationem officiis.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tempore error sunt inventore delectus qui et, ex eius harum rem repellendus impedit nam saepe? Quae repellendus cum illum maxime quos.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veniam debitis esse, accusamus error vero rerum corrupti blanditiis laudantium ratione molestiae delectus! Est sit neque voluptatibus officiis? Quibusdam, rem ipsa, impedit quo quod illum odio iusto recusandae, quia est similique.</p>
+            
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter your name">
+                    <input type="text" placeholder="Enter your email">
+                    <textarea rows="5" placeholder="Your comment"></textarea>
+                    
+                    <button type="submit" class="hero-btn yellow-btn"> POST COMMENT</button>
+                </form> 
+            </div>
+            </div>
+            
+            
+
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Machine learning</span>
+                    <span>34</span>
+                </div>
+                <div>
+                    <span>Computer Science</span>
+                    <span>42</span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- section footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod laboriosam optio, <br> quidem quos quisquam culpa perferendis sunt enim. Id, voluptate.</p>
+
+        <div class="icons">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+        <p>Made By Naragool K</p>
+    </section>
+
+
+<!-- Javascript for toggle menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>
